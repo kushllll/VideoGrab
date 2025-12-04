@@ -1,0 +1,25 @@
+{
+  "name": "VideoGrab",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "forwardPorts": [5000],
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "npm run dev",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "portsAttributes": {
+    "5000": {
+      "label": "VideoGrab App",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
