@@ -88,7 +88,7 @@ VideoGrab/
 
 ## License
 
-MIT License
+2025 DMCA
 
 ## Note
 
